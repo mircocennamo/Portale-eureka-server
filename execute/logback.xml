@@ -3,7 +3,7 @@
 
     <appender name="RollingFileBatch"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOGS}/portale/portale-eureka-server.log</file>
+        <file>${LOGS}/portale/eurekaserver/portale-eureka-server.log</file>
         <encoder
                 class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
@@ -12,7 +12,7 @@
         <rollingPolicy
                 class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- rollover daily and when the file reaches 10 MegaBytes -->
-            <fileNamePattern>${LOGS}/portale/archived/portale-eureka-server-%d{yyyy-MM-dd}.%i.log
+            <fileNamePattern>${LOGS}/portale/eurekaserver/archived/portale-eureka-server-%d{yyyy-MM-dd}.%i.log
             </fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
